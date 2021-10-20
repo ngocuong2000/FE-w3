@@ -1,0 +1,750 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+    <body>
+        <div class="right">
+            <div class="pull-right-sidebar">
+                <span class="close-right-sidebar"><img src="img/close.png" alt=""></span>
+            </div>
+
+            <div class="right-sidebar">
+                <div id="demobar" class="right-sidebar-notification" >
+                    <div class="in-right-sidebar">
+                        <a href="">
+                            <span class="icon-img"><img src="img/back.png" alt=""></span>
+                            <span class="icon-text">Back</span>
+                        </a>
+
+                        <a href="">
+                            <span class="icon-img"><img src="img/download.png" alt=""></span>
+                            <span class="icon-text">Download</span>
+                        </a>
+
+                        <a href="">
+                            <span class="icon-img"><img src="img/buy.png" alt=""></span>
+                            <span class="icon-text">Buy</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <header>
+            <div class="container-fluid header__top">
+                <div class="row row-header">
+                    <div class="col-lg-2 col-md-3 col-sm-6 header__offers d-flex align-items-center justify-content-center">
+                        <a href="#">Today's special Offers !</a>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-12 header__search">
+                        <form action="#" method="post">
+                            <input type="text" placeholder="Search a product..." />
+                            <button type="submit" style="height: 40px;" class="btn btn-danger btn-search" aria-label="search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-8 cart-col">
+                        <div class="header__cart d-flex justify-content-start align-items-center">
+                            <div class="cart">
+                                <span class="view-cart">
+                                    View your cart
+                                    <i class="fa fa-shopping-cart cart-picture" aria-hidden="true"></i>
+                                    
+                                </span>
+
+                                <div id="show-cart" class="show-cart-111">
+                                    <h2>your cart is empty</h2>
+                                    <span class="abc"><i class="fa fa-times" id="x-button" aria-hidden="true"></i></span>
+                                    <div class="list-product">
+                                        <!-- <table>
+                                            <tr>
+                                                <th> <span>tên sản phẩm</span></th>
+                                                <th> <span>số lượng</span></th>
+                                                <th> <span>đơn giá</span></th>
+                                                <th> <span>thành tiền</span></th>
+                                                <th> <span><i class="fa fa-times" id="x-button" aria-hidden="true"></i></span> </th>
+                                            </tr>
+                                            <tbody id="showProduct"></tbody>
+                                            <tr class="trlast">
+                                                <th><span>Sub Total</span></th>
+                                                <th>
+                                                    <p class="coast-total"><span>$</span><span>0</span><span>.00</span></p>
+                                                </th>
+                                                <th><span class="deleteAll" >Delete All</span></th>
+                                            </tr>
+                                        </table> -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="dropdown">
+                                <i class="fa fa-user-o" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                </i>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Login</a>
+                                    <a class="dropdown-item" href="#">Signup</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-1 col-md-3 col-sm-6 col-4 header__contact d-flex justify-content-center align-items-center">
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="logo-product">
+            <div class="container">
+                <div class="logo2">
+                    <h1>
+                        <a href="#"><span>Grocery</span>
+                            Store</a>
+                    </h1>
+                    <div class="back">
+
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="info1">
+                        <a href="#">Events</a>
+                        <p> / </p>
+                        <a href="#">About Us</a>
+                        <p> / </p>
+                        <a href="#">Best Deals</a>
+                        <p> / </p>
+                        <a href="#">Services</a>
+                    </div>
+                    <div id="contact-md1" class="contact-info">
+                        <i class="fas fa-phone-alt"></i><span>(+0123) 234 567</span>
+                        <i class="far fa-envelope"></i><span>store@grocery.com</span>
+                    </div>
+                </div>
+                <div id="contact-md2" class="contact-info">
+                    <i class="fa fa-phone" aria-hidden="true"></i><span>(+0123) 234 567</span>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i><span>store@grocery.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-bar">
+            <div class="hamburger">
+                <button type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <div class="hamburger-item"></div>
+                    <div class="hamburger-item"></div>
+                    <div class="hamburger-item"></div>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html">Branded Foods</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Households</a>
+                  </li>
+                  <li class="nav-item dropdown mega-dropdown active">
+                    <a data-toggle="collapse" data-target="#collapVeget" class="nav-link dropdown-toggle" href="#">Veggies & Fruits</a>
+                    <div class="collapse navbar-collapse" id="collapVeget">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link drop-nav" href="#">Vegetables</a>
+                            <a class="nav-link drop-nav" href="#">Fruits</a>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kitchen</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Short Codes</a>
+                  </li> 
+                  <li class="nav-item dropdown mega-dropdown active">
+                    <a data-toggle="collapse" data-target="#collapBever" class="nav-link dropdown-toggle" href="#">Beverages</a>
+                    <div class="collapse navbar-collapse" id="collapBever">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link drop-nav" href="#">Soft Drinks</a>
+                            <a class="nav-link drop-nav" href="#">Juices</a>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pet Food</a>
+                  </li> 
+                  <li class="nav-item dropdown mega-dropdown active">
+                    <a data-toggle="collapse" data-target="#collapFrozen" class="nav-link dropdown-toggle" href="#">Frozen Foods</a>
+                    <div class="collapse navbar-collapse" id="collapFrozen">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link drop-nav" href="#">Frozen Snacks</a>
+                            <a class="nav-link drop-nav" href="#">Frozen Nonveg</a>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bread & Bakery</a>
+                  </li>    
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner row">
+            <div class="sidenav col-lg-2 col-md-3">
+                <a class="active" href="products.html">Branded Foods</a>
+                <a href="#">Households</a>
+                <div class="veget dropdown-m">
+                    <button class="dropbtn-m dropdown-toggle">Veggies & Fruits</button>
+                    <div class="dropdown-content-m">
+                        <a href="#">Vegetables</a>
+                        <a href="#">Fruits</a>
+                    </div>
+                </div>
+                <a href="#">Kitchen</a>
+                <a href="#">Short Codes</a>
+                <div class="bever dropdown-m">
+                    <button class="dropbtn-m dropdown-toggle">Beverages</button>
+                    <div class="dropdown-content-m">
+                        <a href="#">Soft Drink</a>
+                        <a href="#">Juices</a>
+                    </div>
+                </div>
+                <a href="#">Pet Food</a>
+                <div class="frozen dropdown-m">
+                    <button class="dropbtn-m dropdown-toggle">Frozen Foods</button>
+                    <div class="dropdown-content-m">
+                        <a href="#">Frozen Snacks</a>
+                        <a href="#">Frozen Nonveg</a>
+                    </div>
+                </div>
+                <a href="#">Bread & Bakery</a>
+            </div>
+
+
+            <div class="slideshow-container col-lg-10 col-md-9">
+                <div class="mySlides">
+                    <div class="banner1">
+                        <div class="move">
+                            <h3>
+                                Make your <span>food</span> with Spicy
+                            </h3>
+                            
+                            <div class="more-info">
+                                <a href="#">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="banner2">
+                        <h3>
+                            Make your <span>food</span> with Spicy
+                        </h3>
+                        <div class="more-info">
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="banner3">
+                        <h3>
+                            Up to <span>50%</span> OFF.
+                        </h3>
+                        <div class="more-info">
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-dot" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+
+            <div class="advertise">
+                <div class="advertise-item">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/4.jpg" alt="discount">
+                    <div class="discount-info">
+                        <p>Discount Offer</p>
+                        <div class="circle-discount">25%</div>
+                    </div>
+                </div>
+    
+                <div class="advertise-item">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/5.jpg" alt="groceries">
+                    <div class="forGro">
+                        <p>Introducing <span>Best Store</span> For <b>GROCERIES</b></p>
+                    </div>
+                </div>
+    
+                <div class="advertise-item">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/6.jpg" alt="savemoney">
+                    <div class="save">
+                        <p>Save <span>upto</span> $10</p>
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+
+        
+        <main class="main">
+            <section class="main__title">
+                <h2>Hot offers</h2>
+                <p></p>
+            </section>
+            <section class="main__list">
+                <article class="main__list--catelory">
+                    <div class="main__list-outside">
+                        <figure>
+                            <div class="img">
+                                <img src="img/product1.png" class="js-img" alt="">
+                                <img src="img/tag.png" alt="" class="logo git">
+                            </div>
+                            <div class="product">
+                                <strong ><a class="nameProduct" href="">Fortune Sunflower Oil</a></strong>
+                                <div class="coast">
+                                <p class="coast-new"><span>$</span> <span>7.00</span> </p>
+                                <p class="coast-old"><span>$</span> <span>10.00</span> </p>
+                                </div>
+                            </div>
+                            <div class="btn-product">
+                                <button class="js-test">Add to card</button>
+                            </div>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="main__list--catelory">
+                    <div class="main__list-outside">
+                        <figure>
+                            <div class="img">
+                                <img src="img/product2.png" class="js-img" alt="">
+                            </div>
+                            <div class="product">
+                                <strong ><a class="nameProduct" href="">Basmati Rise (5 Kg)</a></strong>
+                                <div class="coast">
+                                <p class="coast-new"><span>$</span> <span>11.99</span> </p>
+                                <p class="coast-old"><span>$</span> <span>15.00</span> </p>
+                                </div>
+                            </div>
+                            <div class="btn-product">
+                                <button class="js-test">add to card</button>
+                            </div>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="main__list--catelory">
+                    <div class="main__list-outside">
+                        <figure>
+                            <div class="img">
+                                <img src="img/product3.png" class="js-img" alt="">
+                                <img src="img/offer.png" alt="" class="logo">
+                            </div>
+                            <div class="product">
+                                <strong><a class="nameProduct" href="">Pepsi Soft Drink (2 Ltr)</a></strong>
+                                <div class="coast">
+                                <p class="coast-new"><span>$</span> <span>8.00</span> </p>
+                                <p class="coast-old"><span>$</span> <span>10.00</span> </p>
+                                </div>
+                            </div>
+                            <div class="btn-product">
+                                <button class="js-test">add to cart</button>
+                            </div>
+                        </figure>
+                    </div>    
+                </article>
+
+                <article class="main__list--catelory">
+                    <div class="main__list-outside">
+                        <figure>
+                            <div class="img">
+                                <img src="img/product4.png" class="js-img" alt="">
+                                <img src="img/offer.png" alt="" class="logo">
+                            </div>
+                            <div class="product">
+                                <strong><a class="nameProduct" href="">Dogs Food (4 Kg)</a></strong>
+                                <div class="coast">
+                                <p class="coast-new"><span>$</span> <span>9.00</span> </p>
+                                <p class="coast-old"><span>$</span> <span>11.00</span> </p>
+                                </div>
+                            </div>
+                            <div class="btn-product">
+                                <button class="js-test">add to cart</button>
+                            </div>
+                        </figure>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <div class="top-product">
+            <h3>Top Product</h3>
+            <div class="container">
+                
+                <div class="row colum-content">
+                    <div class="colum-content-1 col-md-3 col-sm-6">
+                        <ul>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">All Brands</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Vegetables</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Fruits</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Pet food</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Bread & Bakery</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Cleanning</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Spices</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Dry Fruit</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <a href="">Dairy Products</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="row-content col-md-9 col-sm-6">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <div class="item1">
+                                        <img src="img/1.png" style="width: 280px; height: 350px;" alt="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <div class="cover-items">
+                                        <div class="item-cc">
+                                            <img src="img/2.jpg" style="width: 280px; height: 175px;" alt="">
+                                        </div>
+                                        <div class="item-c">
+                                                <a href="" class="button-item-c-more">shop now</a>
+                                        </div>
+                                    </div>
+                                    <div class="item2">
+                                        <img src="img/3.jpg" style="width: 280px; height: 175px;" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <div class="item3">
+                                        <img src="img/4.jpg" style="width: 280px; height: 175px;" alt="">
+                                    </div>
+                                    <div class="item4">
+                                        <img src="img/5.jpg" style="width: 280px; height: 175px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="blank">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="move">
+                            <div class="move-text">
+                                <h4>
+                                    Get
+                                    <span class="blink">25% off</span>
+                                    on the first also get gift voucher
+                                </h4>
+                            </div>
+                            <div class="special">
+                                <span><img src="img/special.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="new-letter">
+            <div class="container letter">
+                <div class="letter1">
+                    <h3>Sign up for our newsletter</h3>
+                </div>
+                <div class="letter2">
+                    <form action="#" method="POST">
+                        <input type="email" name="Email" placeholder ="Email">
+                        <input type="submit" value="subcribe now">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>information</h3>
+                        <ul class="top-footer-2">
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Events</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">About Us</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Best Deal</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Services</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Short Codes</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h3>policy infor</h3>
+                        <ul class="top-footer-2">
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">FAQ</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Private Policy</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Terms Of Use</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h3>What in stores</h3>
+                        <ul class="top-footer-2">
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Pet Food</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Frozen Snacks</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Kitchen</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Branded Foods</a> 
+                            </li>
+                            <li> 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="">Households</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h3>twitter posts</h3>
+                        <ul class="top-footer-3">
+                            <li>
+                                <label for="" class="twitter" aria-hidden="true"></label>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i>01 day ago</i>
+                                <span>
+                                    Non numquam
+                                    <a href="#">http://sd.ds/13jklf#</a>
+                                    eius modi tempora incidunt ut labore et
+                                    <a href="#">http://sd.ds/1389kjklf#</a>
+                                    quo nulla
+                                </span> 
+                            </li>
+                            <li>  
+                                <label for="" class="twitter" aria-hidden="true"></label>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i>02 days ago</i>
+                                <span>
+                                    Con numquam
+                                    <a href="#">http://sd.ds/1389kjklf#</a>
+                                    eius modi tempora incidunt ut labore et
+                                    <a href="#">http://fd.uf/56hfg#</a>
+                                    quo nulla
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+    
+                <div class="row agile-footer">
+                    <div class="col-sm agile-col-sm-right">
+                        <div class="agile-col-sm-1">
+                            <h4>100% secure payments</h4>
+                            <img src="img/card.png" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm agile-col-sm-left">
+                        <div class="agile-col-sm-2">
+                            <h5>connect with us</h5>    
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fb">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tw">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gg">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="insta">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dri">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="botom-footer">
+                    <p>
+                        © 2016 Grocery Store. All rights reserved | Design by 
+                        <a href="http://w3layouts.com/">W3layouts</a>
+                    </p>
+                </div>
+            
+        </div>
+<!--  -->
+        <!-- <section class="cartt">
+            <h2>cart</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>sp</th>
+                            <th>giá</th>
+                            <th>sl</th>
+                            <th>chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex; align-items: center;"><img style="width: 70px" src="img/nuocngot.png" alt="">name</td>
+                            <td><p><span>1</span><sup>$</sup></p></td>
+                            <td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer;">xóa</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">tổng tiền:  <span>20</span><sup>$</sup></p>
+                </div>
+            </form>
+        </section> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var y = document.getElementsByClassName("dot");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    y[i].className = y[i].className.replace(" active", "");
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }    
+                x[myIndex-1].style.display = "block";  
+                y[myIndex-1].className += " active";
+                setTimeout(carousel, 2000);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+        
+    </body>
+</html>

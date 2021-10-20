@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="css/products.css"> -->
+    <link rel="stylesheet" href="css/single.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Product Detail</title>
+</head>
+<body>
+    <header id="start">
+
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <a href="index.html">Home</a>
+                    <span>|</span>
+                </li>
+                <li>Branded Foods</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="side-bar">
+        <div class="hamburger">
+            <button type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <div class="hamburger-item"></div>
+                <div class="hamburger-item"></div>
+                <div class="hamburger-item"></div>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Branded Foods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Households</a>
+              </li>
+              <li class="nav-item dropdown mega-dropdown active">
+                <a data-toggle="collapse" data-target="#collapVeget" class="nav-link dropdown-toggle" href="#">Veggies & Fruits</a>
+                <div class="collapse navbar-collapse" id="collapVeget">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link drop-nav" href="#">Vegetables</a>
+                        <a class="nav-link drop-nav" href="#">Fruits</a>
+                      </li>
+                    </ul>
+                </div>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kitchen</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Short Codes</a>
+              </li> 
+              <li class="nav-item dropdown mega-dropdown active">
+                <a data-toggle="collapse" data-target="#collapBever" class="nav-link dropdown-toggle" href="#">Beverages</a>
+                <div class="collapse navbar-collapse" id="collapBever">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link drop-nav" href="#">Soft Drinks</a>
+                        <a class="nav-link drop-nav" href="#">Juices</a>
+                      </li>
+                    </ul>
+                </div>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pet Food</a>
+              </li> 
+              <li class="nav-item dropdown mega-dropdown active">
+                <a data-toggle="collapse" data-target="#collapFrozen" class="nav-link dropdown-toggle" href="#">Frozen Foods</a>
+                <div class="collapse navbar-collapse" id="collapFrozen">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link drop-nav" href="#">Frozen Snacks</a>
+                        <a class="nav-link drop-nav" href="#">Frozen Nonveg</a>
+                      </li>
+                    </ul>
+                </div>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bread & Bakery</a>
+              </li>    
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="sidenav col-lg-2 col-md-3 ">
+            <a class="active" href="products.html">Branded Foods</a>
+            <a href="#">Households</a>
+            <div class="veget dropdown-m">
+                <button class="dropbtn-m dropdown-toggle">Veggies & Fruits</button>
+                <div class="dropdown-content-m">
+                    <a href="#">Vegetables</a>
+                    <a href="#">Fruits</a>
+                </div>
+            </div>
+            <a href="#">Kitchen</a>
+            <a href="#">Short Codes</a>
+            <div class="bever dropdown-m">
+                <button class="dropbtn-m dropdown-toggle">Beverages</button>
+                <div class="dropdown-content-m">
+                    <a href="#">Soft Drink</a>
+                    <a href="#">Juices</a>
+                </div>
+            </div>
+            <a href="#">Pet Food</a>
+            <div class="frozen dropdown-m">
+                <button class="dropbtn-m dropdown-toggle">Frozen Foods</button>
+                <div class="dropdown-content-m">
+                    <a href="#">Frozen Snacks</a>
+                    <a href="#">Frozen Nonveg</a>
+                </div>
+            </div>
+            <a href="#">Bread & Bakery</a>
+        </div>
+
+
+        <div class="slideshow-container col-lg-10 col-md-9">
+
+            <div class="banner-img col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                <h3>Best Deals For New Products<span class="spe-off"></span></h3>
+            </div>
+
+            <div id="single-product-detail">
+                <div class="product-intro col-md-12">
+                    <h5>charminar pulao basmati rice 5 kg</h5>
+                    <div class="change-flex row">
+                        
+                        <div class="img-magnifier-container col-md-4">
+                            <img id="productImage" src="img/single.png" alt="">
+                        </div>
+
+                        <div class="product-detail-info col-md-8">
+                            <form>
+                                <fieldset>
+                                  <span class="star-cb-group">
+                                    <input type="radio" id="rating-5" name="rating" value="5" />
+                                    <label for="rating-5"></label>
+                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" />
+                                    <label for="rating-4"></label>
+                                    <input type="radio" id="rating-3" name="rating" value="3" />
+                                    <label for="rating-3"></label>
+                                    <input type="radio" id="rating-2" name="rating" value="2" />
+                                    <label for="rating-2"></label>
+                                    <input type="radio" id="rating-1" name="rating" value="1" />
+                                    <label for="rating-1"></label>
+                                  </span>
+                                </fieldset>
+                            </form>
+                                <div class="product-des">
+                                    <h3>Description:</h3>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="payment">
+                                    
+                                    <button class="btn-sub shop-btn" type="button" onclick=addToSingleCart(event)>ADD TO CART</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="main">
+        <section class="main__title">
+            <h2>Popular Brands</h2>
+            <p></p>
+        </section>
+        <section class="main__list">
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img1.png" class="js-img" alt="">
+                            <img src="img/tag.png" alt="" class="logo git">
+                        </div>
+                        <div class="product">
+                            <strong ><a class="nameProduct" href="">Knorr Instant Soup (100 Gm)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>3.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>5.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">Add to card</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img2.png" class="js-img" alt="">
+                        </div>
+                        <div class="product">
+                            <strong ><a class="nameProduct" href="">Chings Noodles (75 Gm)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>5.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>8.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to card</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img3.png" class="js-img" alt="">
+                            <img src="img/offer.png" alt="" class="logo">
+                        </div>
+                        <div class="product">
+                            <strong><a class="nameProduct" href="">Lahsun Sev (150 Gm)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>3.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>5.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to cart</button>
+                        </div>
+                    </figure>
+                </div>    
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img4.png" class="js-img" alt="">
+                            <img src="img/offer.png" alt="" class="logo">
+                        </div>
+                        <div class="product">
+                            <strong><a class="nameProduct" href="">Premium Bake Rusk (300 Gm)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>5.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>7.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to cart</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <section class="main__list">
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img5.png" class="js-img" alt="">
+                            <img src="img/tag.png" alt="" class="logo git">
+                        </div>
+                        <div class="product">
+                            <strong ><a class="nameProduct" href="">Fresh Spinach (Palak)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>2.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>3.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">Add to card</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img6.png" class="js-img" alt="">
+                        </div>
+                        <div class="product">
+                            <strong ><a class="nameProduct" href="">Fresh Mango Dasheri (1 Kg)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>5.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>8.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to card</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img7.png" class="js-img" alt="">
+                            <img src="img/offer.png" alt="" class="logo">
+                        </div>
+                        <div class="product">
+                            <strong><a class="nameProduct" href="">Fresh Apple Red (1 Kg)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>6.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>8.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to cart</button>
+                        </div>
+                    </figure>
+                </div>    
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img8.png" class="js-img" alt="">
+                            <img src="img/offer.png" alt="" class="logo">
+                        </div>
+                        <div class="product">
+                            <strong><a class="nameProduct" href="">Fresh Broccoli (500 Gm)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>4.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>6.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to cart</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <section class="main__list">
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img9.png" class="js-img" alt="">
+                            <img src="img/tag.png" alt="" class="logo git">
+                        </div>
+                        <div class="product">
+                            <strong ><a class="nameProduct" href="">Mixed Fruit Juice (1 Ltr)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>3.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>4.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">Add to card</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img10.png" class="js-img" alt="">
+                        </div>
+                        <div class="product">
+                            <strong ><a class="nameProduct" href="">Prune Juice - Sunsweet (1 Ltr)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>4.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>5.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to card</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img11.png" class="js-img" alt="">
+                            <img src="img/offer.png" alt="" class="logo">
+                        </div>
+                        <div class="product">
+                            <strong><a class="nameProduct" href="">Coco Cola Zero Can (330 Ml)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>3.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>5.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to cart</button>
+                        </div>
+                    </figure>
+                </div>    
+            </article>
+
+            <article class="main__list--catelory">
+                <div class="main__list-outside">
+                    <figure>
+                        <div class="img">
+                            <img src="img/img12.png" class="js-img" alt="">
+                            <img src="img/offer.png" alt="" class="logo">
+                        </div>
+                        <div class="product">
+                            <strong><a class="nameProduct" href="">Sprite Bottle (2 Ltr)</a></strong>
+                            <div class="coast">
+                            <p class="coast-new"><span>$</span> <span>3.00</span> </p>
+                            <p class="coast-old"><span>$</span> <span>4.00</span> </p>
+                            </div>
+                        </div>
+                        <div class="btn-product">
+                            <button class="js-test">add to cart</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <footer id="end"></footer>
+
+    <script src="js/okzoom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').okzoom({
+            width: 200,
+            height: 200,
+            round: true,
+            background: "#fff",
+            shadow: "0 0 5px #000",
+            border: "1px solid black"
+            });
+        })
+    </script>
+
+    <script src="js/single.js"></script>
+</body>
+</html>
